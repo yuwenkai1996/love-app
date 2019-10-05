@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"content{ width: ",[0,750],"; height: 100vh; background: rgb(255,210,203); }\n.",[1],"header{ height: ",[0,80],"; line-height: ",[0,80],"; background:	#FFC0CB; }\n",],undefined,{path:"./pages/important-days/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/important-days/index.wxml') } }));

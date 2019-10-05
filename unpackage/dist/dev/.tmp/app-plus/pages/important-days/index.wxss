@@ -1,0 +1,12 @@
+
+.content{
+	width: 750rpx;
+	height: 100vh;
+	background: rgb(255,210,203);
+}
+.header{
+	height: 80rpx;
+	line-height: 80rpx;
+	background:	#FFC0CB;
+}
+

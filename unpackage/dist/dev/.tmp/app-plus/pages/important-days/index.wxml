@@ -1,0 +1,1 @@
+<view class="content _div"><view class="header _div"><label data-event-opts="{{[['tap',[['quit',['$event']]]]]}}" style="float:left;font-size:30rpx;display:inline-block;padding-left:20rpx;" bindtap="__e" class="_span">返回</label><view style="text-align:center;" class="_p">纪念日</view></view></view>

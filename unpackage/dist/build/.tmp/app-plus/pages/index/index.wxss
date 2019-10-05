@@ -1,0 +1,60 @@
+
+.content{
+	width: 750rpx;
+	height: 100vh;
+	background: #afdfe4;
+}
+.title {
+	font-size: 50rpx;
+	color: #ea66a6;
+	text-align: center;
+	padding: 50rpx;
+}
+.menu-div{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+.menu-item{
+	width: 200rpx;
+}
+.menu-item image{
+	width: 180rpx;
+	height: 180rpx;
+	padding: 10rpx;
+}
+.menu-item ._p{
+	text-align: center;
+	font-size: 36rpx;
+}
+.dialog{
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	width: 750rpx;
+	height: 100vh;
+}
+.dialog-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	    -ms-transform: translateY(-50%) translateX(-50%);
+	        transform: translateY(-50%) translateX(-50%);
+	width: 700rpx;
+	background: white;
+	border-radius: 20rpx;
+}
+.dialog-quit{
+	border-top: 1rpx solid gray;
+	text-align: center;
+	padding: 20rpx 10rpx;
+}
+

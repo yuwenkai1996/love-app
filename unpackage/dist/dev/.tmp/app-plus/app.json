@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/choose-user/index",
+    "pages/important-days/index"
+  ],
+  "window": {
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "love-app",
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
+}
