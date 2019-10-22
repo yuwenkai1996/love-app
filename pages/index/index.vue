@@ -36,20 +36,15 @@
 
 			</div>
 		</div>
-		<div class="dialog" v-show="dialogShow">
-			<div class="dialog-content">
-				<p style="padding: 20rpx;">{{dialogConent}}</p>
-				<div class="dialog-quit" @tap="dialogShow=false">
-					看到啦~
-				</div>
-			</div>
-		</div>
+		<dialog-div ref="dialog" :context="dialogConent" :confirm="'知道啦'"></dialog-div>
 	</div>
 </template>
 
 <script>
 	import moment from 'moment'
+	import dialogDiv from '../../components/dialog.vue'
 	export default {
+		components: { dialogDiv },
 		data() {
 			return {
 				menuArr:[
@@ -60,9 +55,6 @@
 			}
 		},
 		onLoad() {
-			console.log(moment().format('YYYY-MM-DD HH:mm:ss'))
-			this.dialogShow = true
-			this.dialogConent = '媳妇我爱你呦~'
 			uni.getStorage({
 			    key: 'user_id',
 			    success: (res) => {
@@ -78,11 +70,11 @@
 			});
 			
 		},
+		onShow() {
+			// this.dialogConent = '媳妇我爱你呦'
+			// this.$refs.dialog.changeShow(true)
+		},
 		methods: {
-			showDialog(content) {
-				this.dialogConent = content
-				this.dialogShow = true
-			},
 			getLoveLanguage() {
 				let arr = ['你的情话我听着，你的余生我陪着。',
 				'没有特别喜欢吃的零食，没有特别喜欢听的歌，却有个特别喜欢的你。',
@@ -103,7 +95,8 @@
 				'和你在一起的时候，被你抱着的时候，多想时间就此停住吧，像吃了跳跳糖一样甜的噼里啪啦真幸福啊。',
 				'如果你感到辛苦，那就转过身到我怀里来躲一躲吧，就算我比你小，怀抱也不够大不够暖，但是我会用全身气力抱紧你，不会松开手的，对你会很温柔。',
 				'每当感受到你的目光，整个脑袋都会被幸福填的满满的。']
-				this.showDialog(arr[Math.floor(Math.random()*19)])
+				this.dialogConent = arr[Math.floor(Math.random()*19)]
+				this.$refs.dialog.changeShow(true)
 			},
 			toImportantDay() {
 				uni.navigateTo({
@@ -142,26 +135,5 @@
 	.menu-item p{
 		text-align: center;
 		font-size: 36rpx;
-	}
-	.dialog{
-		position: absolute;
-		top: 0;
-		background: rgba(0,0,0,0.5);
-		width: 750rpx;
-		height: 100vh;
-	}
-	.dialog-content{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateY(-50%) translateX(-50%);
-		width: 700rpx;
-		background: white;
-		border-radius: 20rpx;
-	}
-	.dialog-quit{
-		border-top: 1rpx solid gray;
-		text-align: center;
-		padding: 20rpx 10rpx;
 	}
 </style>

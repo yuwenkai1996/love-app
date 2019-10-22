@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/choose-user/index"
+    "pages/choose-user/index",
+    "pages/important-days/index"
   ],
   "window": {
     "backgroundColor": "#F8F8F8",

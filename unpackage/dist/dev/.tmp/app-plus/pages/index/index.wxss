@@ -34,27 +34,4 @@
 	text-align: center;
 	font-size: 36rpx;
 }
-.dialog{
-	position: absolute;
-	top: 0;
-	background: rgba(0,0,0,0.5);
-	width: 750rpx;
-	height: 100vh;
-}
-.dialog-content{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translateY(-50%) translateX(-50%);
-	    -ms-transform: translateY(-50%) translateX(-50%);
-	        transform: translateY(-50%) translateX(-50%);
-	width: 700rpx;
-	background: white;
-	border-radius: 20rpx;
-}
-.dialog-quit{
-	border-top: 1rpx solid gray;
-	text-align: center;
-	padding: 20rpx 10rpx;
-}
 

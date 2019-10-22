@@ -1,0 +1,31 @@
+
+.dialog.data-v-53657a14{
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	width: 750rpx;
+	height: 100vh;
+}
+.dialog-content.data-v-53657a14{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	    -ms-transform: translateY(-50%) translateX(-50%);
+	        transform: translateY(-50%) translateX(-50%);
+	width: 700rpx;
+	background: white;
+	border-radius: 20rpx;
+}
+.dialog-quit.data-v-53657a14{
+	border-top: 1rpx solid gray;
+	text-align: center;
+	padding: 20rpx 10rpx;
+}
+.close-icon.data-v-53657a14{
+	position: absolute;
+	right: -20rpx;
+	top: -30rpx;
+	z-index: 100;
+}
+
